@@ -3,10 +3,14 @@ using System.Collections;
 
 public class Controller : MonoBehaviour {
 	
+//---------------------------------------------------------------------------FIELDS:
+
+
 //----------------------------------------------------------------INHERITED METHODS:
 	// Use this for initialization
 	void Start () {
-	
+		LevelFactory levelFactory = LevelFactory.Instance;
+		levelFactory.makeLevel(LevelFactory.makeTestSong(), 23);
 	}
 	
 	// Update is called once per frame
